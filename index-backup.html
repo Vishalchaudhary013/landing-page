@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Document</title>
+    <style>
+         @keyframes scroll {
+         0% {
+         transform: translateX(0);
+         }
+         100% {
+         transform: translateX(-50%);
+         }
+         }
+         .animate-scroll {
+         animation: scroll 10s linear infinite;
+         }
+         @keyframes scroll-right {
+         0% {
+         transform: translateX(-50%);
+         }
+         100% {
+         transform: translateX(0);
+         }
+         }
+         .animate-scroll-right {
+         animation: scroll-right 10s linear infinite;
+         }
+         @keyframes scroll-left {
+         0% {
+         transform: translateX(0);
+         }
+         100% {
+         transform: translateX(-50%);
+         }
+         }
+         .animate-scroll-left {
+         animation: scroll-left 10s linear infinite;
+         }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="fixed top-0 left-0 w-full z-50">
+            <div class="bg-[#223A3D]">
+                <div class=" w-[1400px] mx-auto">
+                    <div class="flex justify-end items-center py-[10px] px-[10px] width-[1400px]">
+                        <i class="bi bi-globe2 text-white"></i>
+                    </div>
+                </div>
+            </div>
+        
+
+
+            <nav>
+                <div class="bg-[#C7FBA0]">
+                    <div class=" w-[1400px] mx-auto">
+                         <div class="flex items-center justify-between py-[25px]">
+                    <div>
+                        <a href="">
+                            <img src="https://gostudyin.com/wp-content/uploads/2025/03/studyin-logo.svg" alt="Studyin Logo" class="w-[179px] h-[40px]" >
+                        </a>
+                    </div>
+
+                    <div class="flex items-center gap-8 ">
+                        <div class="flex items-center  ">
+                               <ul class="flex gap-6 items-center">
+                                    <li class="relative group">
+                                        <a href="#" class="flex items-center gap-3 cursor-pointer">
+                                        Destinations
+                                        <i class="bi bi-chevron-down text-xs"></i>
+                                        </a>
+                                        <ul
+                                            class="absolute left-0 top-full mt-2 w-45 bg-[#C7FBA0] border-t border-black shadow-lg rounded-b-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50"
+                                            >
+                                            <li>
+                                            <a class="block px-4 py-2 m-2 rounded-lg hover:bg-[#ABF970]"
+                                                >United Kingdom</a
+                                                >
+                                            </li>
+                                            <li>
+                                            <a class="block px-4 py-2 m-2 rounded-lg hover:bg-[#ABF970]"
+                                                >Australia</a
+                                                >
+                                            </li>
+                                            <li>
+                                            <a class="block px-4 py-2 m-2 rounded-lg hover:bg-[#ABF970]"
+                                                >Ireland</a
+                                                >
+                                            </li>
+                                            <li>
+                                            <a class="block px-4 py-2 m-2 rounded-lg hover:bg-[#ABF970]"
+                                                >Canada</a
+                                                >
+                                            </li>
+                                            <li>
+                                            <a class="block px-4 py-2 m-2 rounded-lg hover:bg-[#ABF970]"
+                                                >New Zealand</a
+                                                >
+                                            </li>
+                                            <li>
+                                            <a class="block px-4 py-2 m-2 rounded-lg hover:bg-[#ABF970]"
+                                                >United States</a
+                                                >
+                                            </li>
+                                            <li>
+                                            <a class="block px-4 py-2 m-2 rounded-lg hover:bg-[#ABF970]"
+                                                >Dubai</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Course finder</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Language prep</a></li>
+                                    <li class="relative group">
+                                        <a href="#" class="flex items-center gap-3 cursor-pointer">
+                                        Resource
+                                        <i class="bi bi-chevron-down text-xs"></i>
+                                        </a>
+                                        <ul
+                                            class="absolute left-0 top-full mt-2 w-45 bg-[#C7FBA0] border-t border-black shadow-lg rounded-b-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50"
+                                            >
+                                            <li>
+                                            <a class="block px-4 py-2 m-2 rounded-lg hover:bg-[#ABF970]"
+                                                >Expert Insight</a
+                                                >
+                                            </li>
+                                            <li>
+                                            <a class="block px-4 py-2 m-2 rounded-lg hover:bg-[#ABF970]"
+                                                >Scholarships</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Events</a></li>
+                                    <li class="relative group">
+                                        <a href="#" class="flex items-center gap-3 cursor-pointer">
+                                        Company
+                                        <i class="bi bi-chevron-down text-xs"></i>
+                                        </a>
+                                        <ul
+                                            class="absolute left-0 top-full mt-2 w-45 bg-[#C7FBA0] border-t border-black shadow-lg rounded-b-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50"
+                                            >
+                                            <li>
+                                            <a class="block px-4 py-2 m-2 rounded-lg hover:bg-[#ABF970]"
+                                                >Team</a
+                                                >
+                                            </li>
+                                            <li>
+                                            <a class="block px-4 py-2 m-2 rounded-lg hover:bg-[#ABF970]"
+                                                >About</a
+                                                >
+                                            </li>
+                                            <li>
+                                            <a class="block px-4 py-2 m-2 rounded-lg hover:bg-[#ABF970]"
+                                                >Global Offices</a
+                                                >
+                                            </li>
+                                            <li>
+                                            <a class="block px-4 py-2 m-2 rounded-lg hover:bg-[#ABF970]"
+                                                >News</a
+                                                >
+                                            </li>
+                                            <li>
+                                            <a class="block px-4 py-2 m-2 rounded-lg hover:bg-[#ABF970]"
+                                                >Careers</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                        </div>
+
+                        <div>
+                            <button
+                                class="bg-red-500 hover:bg-[#FA557C] text-white rounded-xl font-semibold text-xl flex items-center gap-3 px-3 py-3"
+                                >
+                            Book free counselling
+                            <img src="https://gostudyin.com/wp-content/uploads/sites/3/2025/02/button-arrow-right.svg" alt="" class="w-4 h-4" />
+                            </button>
+                        </div>
+                    </div>
+                </div> 
+
+                    </div>
+                </div>
+                        
+            </nav>
+        </div>
+    </header>
+
+    <section>
+            <div class="relative overflow-visible  h-[83vh] " style="background-image: url('./images/image.png'); background-position: 50%;background-size: cover; background-repeat: no-repeat; ">
+                <div class=" w-[1400px] mx-auto py-[95px]">
+
+                    <div class="text-white ">
+
+                            <h1
+                                class="font-['geller-headline'] serif text-[66px] text-white font-bold leading-none tracking-tight mb-5"
+                                >
+                                <span class="text-[#C7FBA0]">Clear steps.</span><br />
+                                <span class="text-[#C7FBA0]">Unbiased guidance.</span><br />
+                                Your study abroad plan<br />
+                                made simple.
+                            </h1>
+
+                            <p class="mb-5 text-[26px] leading-none">
+                                We help you choose the right course <br />
+                                and avoid costly mistakes.
+                            </p>
+                            <div class="mb-10 flex items-center gap-3">
+                                <img src="./images/si-icon.svg" alt="" />
+                                <span class="text-2xl font-bold"
+                                >Stay on track with expert support.</span>
+                            </div>
+
+                            <div class="">
+                                <button
+                                    class="bg-red-500 hover:bg-[#FA557C] text-white rounded-xl font-semibold text-xl flex items-center gap-3 px-3 py-3"
+                                    >
+                                Book free counselling
+                                <img src="https://gostudyin.com/wp-content/uploads/sites/3/2025/02/button-arrow-right.svg" alt="" class="w-4 h-4" />
+                                </button>
+                            </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+            
+    </section>
+
+    <section>
+        <div class="bg-white">
+            <div class=" w-[1400px] mx-auto">
+                <div class="flex flex-wrap justify-center items-center py-[35px] gap-1">
+                        <div class=" flex bg-[#163033] text-[#C7FBA0] gap-2 py-1 px-4 rounded-xl items-center">
+                                <img src="https://gostudyin.com/wp-content/uploads/2025/12/icon-medal.svg" alt="" class="h-6 w-6">
+                        <span class="text-[18px]">Since 2006</span>
+                        </div>
+
+                        <div class=" flex bg-[#163033] text-[#C7FBA0] gap-2 py-1 px-4 rounded-xl items-center">
+                                <img src="https://gostudyin.com/wp-content/uploads/2025/12/iconn-branch.svg" alt="" class="h-6 w-6">
+                        <span class="text-[18px]">100+ Branches Worldwide</span>
+                        </div>
+
+                        <div class=" flex bg-[#163033] text-[#C7FBA0] gap-2 py-1 px-4 rounded-xl items-center">
+                                <img src="https://gostudyin.com/wp-content/uploads/2025/12/icon-book.svg" alt="" class="h-6 w-6">
+                        <span class="text-[18px]">4.7/5.0 (52k Student Reviews)</span>
+                        </div>
+
+                        <div class=" flex bg-[#163033] text-[#C7FBA0] gap-2 py-1 px-4 rounded-xl items-center">
+                                <img src="https://gostudyin.com/wp-content/uploads/2025/12/icon-medal.svg" alt="" class="h-6 w-6">
+                        <span class="text-[18px]">Over 1.3M Students Assisted</span>
+                        </div>
+                    
+                </div>
+
+            </div>
+        </div>
+        
+    </section>
+
+    <section>
+            <div class="bg-[#F8F9FA]">
+                <div class="relative  overflow-visible " style="background-image: url('./images/bgimgSection2'); background-position: right 0px top 0px; background-size: initial; background-repeat: no-repeat;">
+            
+                    <div class="w-[1400px] mx-auto py-[95px]">
+                        <div class="mb-25">
+                            <h2 class="font-['geller-headline'] serif text-[64px] font-bold text-[#2017CE] leading-tight">
+                                University fairs,<br />
+                                webinars, <span class="text-black">and open<br />days</span>
+                            </h2>
+                        </div>
+
+                        <div class="bg-white rounded-lg border py-3 mb-5">
+                            <div class="flex text-[#0f172a]">
+                                <div class="flex items-center px-6 py-5 gap-3 flex-1 first:border-l-0 border-l border-[#e5e7eb] ">
+                                    <select
+                                        class="w-full bg-transparent focus:outline-none text-lg  "
+                                        name="month"
+                                        >
+                                        <option value="">Month</option>
+                                        <option>January</option>
+                                        <option>February</option>
+                                        <option>March</option>
+                                        <option>April</option>
+                                        <option>May</option>
+                                        <option>June</option>
+                                        <option>July</option>
+                                        <option>August</option>
+                                        <option>September</option>
+                                        <option>October</option>
+                                        <option>November</option>
+                                        <option>December</option>
+                                    </select>
+                                </div>
+                                <div class="flex items-center px-6 py-5 gap-3 flex-1 border-l border-[#e5e7eb]">
+                                    <select
+                                        class="w-full bg-transparent focus:outline-none text-lg "
+                                        name="event"
+                                        >
+                                        <option value="">All Events</option>
+                                        <option>In-person</option>
+                                        <option>Online</option>
+                            
+                                    </select>
+                                </div>
+                                <div class="flex items-center px-6 py-5 gap-3 flex-1 border-l border-[#e5e7eb]">
+                                    <select
+                                        class="w-full bg-transparent focus:outline-none text-lg "
+                                        name="location"
+                                        >
+                                        <option value="">Location</option>
+                                        <option>London</option>
+                                        <option>Manchester</option>
+                                        <option>New York</option>
+                                        <option>Toronto</option>
+                                        <option>Dubai</option>
+                                        <option>Online</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-6 mb-10">
+                            <div class="h-[100%] w-[100%] bg-white border border-[#C7D2FE] rounded-lg">
+                                <div class="flex justify-center pt-20">
+                                    <img src="https://gostudyin.com/wp-content/uploads/2025/03/studyin-logo.svg" alt="Studyin Logo" class="w-[284px] h-[59px]" >
+                                </div>
+
+                                <div>
+                                    <img src="./images/card image" alt="" class="h-[55px]">
+                                </div>
+
+                                <div class="p-10">
+                                     
+                                        <span class="inline-block px-4 py-2 text-sm font-semibold tracking-wide text-[#4338CA]  border border-[#C7D2FE] rounded-lg mb-5">
+                                            IN-PERSON
+                                        </span>
+                                            <h3 class=" text-3xl font-['geller-headline'] serif text-[40px] font-semibold leading-tight mb-10">Ireland University Fair</h3>
+                                            <div class=" space-y-4 text-[#0f172a] font-['DM Sans'] font-normal text-lg">
+                                                <div class="flex gap-15">
+                                                    <div class="flex items-center gap-3">
+                                                        <i class="bi bi-calendar3 text-[#4338CA] text-lg"></i>
+                                                        <span>Jan 7, 2026</span>
+                                                    </div>
+                                                    <div class="flex items-center gap-3">
+                                                        <i class="bi bi-clock text-[#4338CA] text-lg"></i>
+                                                        <span>10:00 – 17:00</span>
+                                                    </div>
+                                                </div>
+                                                <div class="flex items-center gap-3 mb-10">
+                                                    <i class="bi bi-geo-alt text-[#4338CA] text-lg"></i>
+                                                    <span>StudyIn, Banani</span>
+                                                </div>
+                                            </div>
+                                            <button class=" inline-flex items-center justify-center bg-[#2017ce] hover:bg-[#6A64DE] text-white text-xl rounded-xl px-6 py-4 font-semibold">
+                                                View event
+                                            </button>
+                                    
+                                </div>
+
+                            </div>
+                            <div class="h-[100%] w-[100%] bg-white border border-[#C7D2FE] rounded-lg">
+                                <div class="flex justify-center pt-20">
+                                    <img src="https://gostudyin.com/wp-content/uploads/2025/03/studyin-logo.svg" alt="Studyin Logo" class="w-[284px] h-[59px]" >
+                                </div>
+
+                                <div>
+                                    <img src="./images/card image" alt="" class="h-[55px]">
+                                </div>
+
+                                <div class="p-10">
+                                     
+                                        <span class="inline-block px-4 py-2 text-sm font-semibold tracking-wide text-[#4338CA]  border border-[#C7D2FE] rounded-lg mb-5">
+                                            IN-PERSON
+                                        </span>
+                                            <h3 class=" text-3xl font-['geller-headline'] serif text-[40px] font-semibold leading-tight mb-10">Ireland University Fair</h3>
+                                            <div class=" space-y-4 text-[#0f172a] font-['DM Sans'] font-normal text-lg">
+                                                <div class="flex gap-15">
+                                                    <div class="flex items-center gap-3">
+                                                        <i class="bi bi-calendar3 text-[#4338CA] text-lg"></i>
+                                                        <span>Jan 7, 2026</span>
+                                                    </div>
+                                                    <div class="flex items-center gap-3">
+                                                        <i class="bi bi-clock text-[#4338CA] text-lg"></i>
+                                                        <span>10:00 – 17:00</span>
+                                                    </div>
+                                                </div>
+                                                <div class="flex items-center gap-3 mb-10">
+                                                    <i class="bi bi-geo-alt text-[#4338CA] text-lg"></i>
+                                                    <span>StudyIn, Banani</span>
+                                                </div>
+                                            </div>
+                                            <button class=" inline-flex items-center justify-center bg-[#2017ce] hover:bg-[#6A64DE] text-white text-xl rounded-xl px-6 py-4 font-semibold">
+                                                View event
+                                            </button>
+                                    
+                                </div>
+
+                            </div>
+                            <div class="h-[100%] w-[100%] bg-white border border-[#C7D2FE] rounded-lg">
+                                <div class="flex justify-center pt-20">
+                                    <img src="https://gostudyin.com/wp-content/uploads/2025/03/studyin-logo.svg" alt="Studyin Logo" class="w-[284px] h-[59px]" >
+                                </div>
+
+                                <div>
+                                    <img src="./images/card image" alt="" class="h-[55px]">
+                                </div>
+
+                                <div class="p-10">
+                                     
+                                        <span class="inline-block px-4 py-2 text-sm font-semibold tracking-wide text-[#4338CA]  border border-[#C7D2FE] rounded-lg mb-5">
+                                            IN-PERSON
+                                        </span>
+                                            <h3 class=" text-3xl font-['geller-headline'] serif text-[40px] font-semibold leading-tight mb-10">Ireland University Fair</h3>
+                                            <div class=" space-y-4 text-[#0f172a] font-['DM Sans'] font-normal text-lg">
+                                                <div class="flex gap-15">
+                                                    <div class="flex items-center gap-3">
+                                                        <i class="bi bi-calendar3 text-[#4338CA] text-lg"></i>
+                                                        <span>Jan 7, 2026</span>
+                                                    </div>
+                                                    <div class="flex items-center gap-3">
+                                                        <i class="bi bi-clock text-[#4338CA] text-lg"></i>
+                                                        <span>10:00 – 17:00</span>
+                                                    </div>
+                                                </div>
+                                                <div class="flex items-center gap-3 mb-10">
+                                                    <i class="bi bi-geo-alt text-[#4338CA] text-lg"></i>
+                                                    <span>StudyIn, Banani</span>
+                                                </div>
+                                            </div>
+                                            <button class=" inline-flex items-center justify-center bg-[#2017ce] hover:bg-[#6A64DE] text-white text-xl rounded-xl px-6 py-4 font-semibold">
+                                                View event
+                                            </button>
+                                    
+                                </div>
+
+                            </div>
+                            <div class="h-[100%] w-[100%] bg-white border border-[#C7D2FE] rounded-lg">
+                                <div class="flex justify-center pt-20">
+                                    <img src="https://gostudyin.com/wp-content/uploads/2025/03/studyin-logo.svg" alt="Studyin Logo" class="w-[284px] h-[59px]" >
+                                </div>
+
+                                <div>
+                                    <img src="./images/card image" alt="" class="h-[55px]">
+                                </div>
+
+                                <div class="p-10">
+                                     
+                                        <span class="inline-block px-4 py-2 text-sm font-semibold tracking-wide text-[#4338CA]  border border-[#C7D2FE] rounded-lg mb-5">
+                                            IN-PERSON
+                                        </span>
+                                            <h3 class=" text-3xl font-['geller-headline'] serif text-[40px] font-semibold leading-tight mb-10">Ireland University Fair</h3>
+                                            <div class=" space-y-4 text-[#0f172a] font-['DM Sans'] font-normal text-lg">
+                                                <div class="flex gap-15">
+                                                    <div class="flex items-center gap-3">
+                                                        <i class="bi bi-calendar3 text-[#4338CA] text-lg"></i>
+                                                        <span>Jan 7, 2026</span>
+                                                    </div>
+                                                    <div class="flex items-center gap-3">
+                                                        <i class="bi bi-clock text-[#4338CA] text-lg"></i>
+                                                        <span>10:00 – 17:00</span>
+                                                    </div>
+                                                </div>
+                                                <div class="flex items-center gap-3 mb-10">
+                                                    <i class="bi bi-geo-alt text-[#4338CA] text-lg"></i>
+                                                    <span>StudyIn, Banani</span>
+                                                </div>
+                                            </div>
+                                            <button class=" inline-flex items-center justify-center bg-[#2017ce] hover:bg-[#6A64DE] text-white text-xl rounded-xl px-6 py-4 font-semibold">
+                                                View event
+                                            </button>
+                                    
+                                </div>
+
+                            </div>
+                            <div class="h-[100%] w-[100%] bg-white border border-[#C7D2FE] rounded-lg">
+                                <div class="flex justify-center pt-20">
+                                    <img src="https://gostudyin.com/wp-content/uploads/2025/03/studyin-logo.svg" alt="Studyin Logo" class="w-[284px] h-[59px]" >
+                                </div>
+
+                                <div>
+                                    <img src="./images/card image" alt="" class="h-[55px]">
+                                </div>
+
+                                <div class="p-10">
+                                     
+                                        <span class="inline-block px-4 py-2 text-sm font-semibold tracking-wide text-[#4338CA]  border border-[#C7D2FE] rounded-lg mb-5">
+                                            IN-PERSON
+                                        </span>
+                                            <h3 class=" text-3xl font-['geller-headline'] serif text-[40px] font-semibold leading-tight mb-10">Ireland University Fair</h3>
+                                            <div class=" space-y-4 text-[#0f172a] font-['DM Sans'] font-normal text-lg">
+                                                <div class="flex gap-15">
+                                                    <div class="flex items-center gap-3">
+                                                        <i class="bi bi-calendar3 text-[#4338CA] text-lg"></i>
+                                                        <span>Jan 7, 2026</span>
+                                                    </div>
+                                                    <div class="flex items-center gap-3">
+                                                        <i class="bi bi-clock text-[#4338CA] text-lg"></i>
+                                                        <span>10:00 – 17:00</span>
+                                                    </div>
+                                                </div>
+                                                <div class="flex items-center gap-3 mb-10">
+                                                    <i class="bi bi-geo-alt text-[#4338CA] text-lg"></i>
+                                                    <span>StudyIn, Banani</span>
+                                                </div>
+                                            </div>
+                                            <button class=" inline-flex items-center justify-center bg-[#2017ce] hover:bg-[#6A64DE] text-white text-xl rounded-xl px-6 py-4 font-semibold">
+                                                View event
+                                            </button>
+                                    
+                                </div>
+
+                            </div>
+                            <div class="h-[100%] w-[100%] bg-white border border-[#C7D2FE] rounded-lg">
+                                <div class="flex justify-center pt-20">
+                                    <img src="https://gostudyin.com/wp-content/uploads/2025/03/studyin-logo.svg" alt="Studyin Logo" class="w-[284px] h-[59px]" >
+                                </div>
+
+                                <div>
+                                    <img src="./images/card image" alt="" class="h-[55px]">
+                                </div>
+
+                                <div class="p-10">
+                                     
+                                        <span class="inline-block px-4 py-2 text-sm font-semibold tracking-wide text-[#4338CA]  border border-[#C7D2FE] rounded-lg mb-5">
+                                            IN-PERSON
+                                        </span>
+                                            <h3 class=" text-3xl font-['geller-headline'] serif text-[40px] font-semibold leading-tight mb-10">Ireland University Fair</h3>
+                                            <div class=" space-y-4 text-[#0f172a] font-['DM Sans'] font-normal text-lg">
+                                                <div class="flex gap-15">
+                                                    <div class="flex items-center gap-3">
+                                                        <i class="bi bi-calendar3 text-[#4338CA] text-lg"></i>
+                                                        <span>Jan 7, 2026</span>
+                                                    </div>
+                                                    <div class="flex items-center gap-3">
+                                                        <i class="bi bi-clock text-[#4338CA] text-lg"></i>
+                                                        <span>10:00 – 17:00</span>
+                                                    </div>
+                                                </div>
+                                                <div class="flex items-center gap-3 mb-10">
+                                                    <i class="bi bi-geo-alt text-[#4338CA] text-lg"></i>
+                                                    <span>StudyIn, Banani</span>
+                                                </div>
+                                            </div>
+                                            <button class=" inline-flex items-center justify-center bg-[#2017ce] hover:bg-[#6A64DE] text-white text-xl rounded-xl px-6 py-4 font-semibold">
+                                                View event
+                                            </button>
+                                    
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="flex justify-center ">
+                            <button class="mt-8 inline-flex items-center justify-center bg-[#2017ce] hover:bg-[#6A64DE] text-white text-xl rounded-xl px-6 py-4 font-semibold gap-3">
+                                View all events
+                                <img src="https://gostudyin.com/wp-content/uploads/sites/3/2025/02/button-arrow-right.svg" alt="" class="w-5 h-5" />
+                            </button>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section>
+            <div class="bg-[#ABF970]">
+                <div class="relative overflow-visible " style="background-image: url('./images/bgimgSection3'); background-position: right 0px top 0px; background-size: initial; background-repeat: no-repeat; ">
+                    <div class="w-[1400px] mx-auto pt-[200px] pb-[100px]">
+                        <div class=" mb-40">
+                            <h2 class="font-['geller-headline'] serif text-[64px] font-bold text-black leading-tight">
+                                Find your success with the<br />
+                                world’s most trusted higher <br/>
+                                education specialist
+                            </h2>
+                        </div>
+                        <div class=" flex justify-center gap-10 ">
+                        <div class="w-[100%] h-[450px]  border border-gray-200 rounded-2xl bg-[#EEFEE2]">
+                            <div class="relative overflow-visible h-full rounded-lg" style="background-image: url('https://gostudyin.com/wp-content/uploads/2025/03/6.svg'); background-position: right 0px top 0px; background-size: contain; background-repeat: no-repeat;">
+                                <div class="p-[40px]">
+                                    <div class="flex gap-3  items-center mb-5 ">
+                                        <i class="bi bi-mortarboard text-[#2017CE] text-[30px]"></i>
+                                        <h4 class="text-[40px] font-bold font-['geller-headline'] serif">For student</h4>
+                                    </div>
+                                    <div  class="mb-10 pr-40">
+                                        <p class="text-[19px] leading-tight">Studying abroad is an exciting journey, one filled with new opportunities, experiences, and possibilities. While navigating universities, applications, and visas can feel overwhelming, we’re here to make it feel easy. Our professional and experienced team will be by your side every step of the way, taking care of every challenge with expert guidance. Whatever your ambition, we’re here to make it happen.</p>
+                                    </div>
+                                    <div class="">
+                                        <button
+                                        class="bg-[#2017ce] hover:bg-[#6A64DE] text-white rounded-xl font-semibold text-xl flex items-center gap-3 px-6 py-3">
+                                        Learn more
+                                        <img src="images/button-arrow-right.svg" alt="" class="w-4 h-4" />
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[100%] h-[450px]  border border-gray-200 rounded-2xl bg-[#EEFEE2]">
+                            <div class="relative overflow-visible  h-full rounded-lg" style="background-image: url('https://gostudyin.com/wp-content/uploads/2025/03/5.svg'); background-position: right 0px top 0px; background-size: contain; background-repeat: no-repeat;">
+                                <div class="p-[40px]">
+                                    <div class="flex gap-3 items-center mb-5">
+                                        <i class="bi bi-mortarboard text-[#2017CE] text-[30px]"></i>
+                                        <h4 class="text-[40px] font-bold font-['geller-headline'] serif">For universities</h4>
+                                    </div>
+                                    <div  class="mb-10 pr-50">
+                                        <p class="text-[19px] leading-tight">Welcoming high-achieving international students each year comes with complexities to navigate and uncertainties to manage. From the initial student enquiry to final enrolment, partner with a trusted expert who simplifies the process and provides clarity at every stage of the student journey.</p>
+                                    </div>
+                                    <div class=" flex items-center gap-3 font-semibold text-[18px] text-[#2017CE] mb-10">
+                                        <a href="">Explore fairs and open days</a>
+                                        <i class="bi bi-box-arrow-up-right"></i>
+                                    </div>
+                                    <div class=" flex items-center gap-3 font-semibold text-[18px] text-[#2017CE]">
+                                        <a href="">Explore marketing opportunities</a>
+                                        <i class="bi bi-box-arrow-up-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+                    
+     
+    </section>
+
+    <section>
+            <div class="bg-[#2017CE]">
+                <div class="relative  overflow-visible " style="background-image: url('https://gostudyin.com/wp-content/uploads/2025/03/destination-vector.svg'); background-position: right 0px top 0px; background-size: initial; background-repeat: no-repeat;">
+                    <div class="w-[1400px] mx-auto py-15">
+                    
+         
+                        <h2 class="font-['geller-headline'] serif text-[64px] font-semibold text-white leading-tight tracking-tight mb-30">
+                            Start your journey with the right<br/>
+                            destination—and the right advice
+                        </h2>
+                        <div class="flex gap-10">
+                            <div class="w-[100%] h-[100%]  ">
+                                <div class=" font-['geller-headline'] serif text-[30px] font-semibold text-white ">
+                            <div class=" border-b border-[#e5e7eb] hover:text-black py-3   ">
+                            <div
+                                class="group flex items-center px-3 py-3 justify-between
+                                bg-[#2017CE] hover:bg-[#ABF970]
+                                rounded-lg mb-2 transition-colors duration-300"
+                                >
+                                <a href="" class="text-white group-hover:text-black transition-colors duration-300">
+                                United Kingdom
+                                </a>
+                                <img
+                                    src="images/button-arrow-right.svg"
+                                    alt=""
+                                    class="w-10 h-10 invert-0 group-hover:invert transition-all duration-300"
+                                    />
+                            </div>
+                            </div>
+                        
+                            <div class="border-b border-[#e5e7eb] py-3">
+                            <div
+                                class="group flex items-center px-3 py-3 justify-between
+                                    bg-[#2017CE] hover:bg-[#ABF970]
+                                    rounded-lg my-2 transition-colors duration-300"
+                            >
+                                <a href="" class="text-white group-hover:text-black transition-colors duration-300">
+                                Canada
+                                </a>
+                                <img
+                                src="images/button-arrow-right.svg"
+                                alt=""
+                                class="w-10 h-10 invert-0 group-hover:invert transition-all duration-300"
+                                />
+                            </div>
+                            </div>
+
+                            
+                            <div class="border-b border-[#e5e7eb] py-3">
+                            <div
+                                class="group flex items-center px-3 py-3 justify-between
+                                    bg-[#2017CE] hover:bg-[#ABF970]
+                                    rounded-lg my-2 transition-colors duration-300"
+                            >
+                                <a href="" class="text-white group-hover:text-black transition-colors duration-300">
+                                Australia
+                                </a>
+                                <img
+                                src="images/button-arrow-right.svg"
+                                alt=""
+                                class="w-10 h-10 invert-0 group-hover:invert transition-all duration-300"
+                                />
+                            </div>
+                            </div>
+
+                        
+                            <div class="border-b border-[#e5e7eb] py-3">
+                            <div
+                                class="group flex items-center px-3 py-3 justify-between
+                                    bg-[#2017CE] hover:bg-[#ABF970]
+                                    rounded-lg my-2 transition-colors duration-300"
+                            >
+                                <a href="" class="text-white group-hover:text-black transition-colors duration-300">
+                                Dubai
+                                </a>
+                                <img
+                                src="images/button-arrow-right.svg"
+                                alt=""
+                                class="w-10 h-10 invert-0 group-hover:invert transition-all duration-300"
+                                />
+                            </div>
+                            </div>
+
+                        
+                            <div class="border-b border-[#e5e7eb] py-3">
+                            <div
+                                class="group flex items-center px-3 py-3 justify-between
+                                    bg-[#2017CE] hover:bg-[#ABF970]
+                                    rounded-lg my-2 transition-colors duration-300"
+                            >
+                                <a href="" class="text-white group-hover:text-black transition-colors duration-300">
+                                Ireland
+                                </a>
+                                <img
+                                src="images/button-arrow-right.svg"
+                                alt=""
+                                class="w-10 h-10 invert-0 group-hover:invert transition-all duration-300"
+                                />
+                            </div>
+                            </div>
+
+                            
+                            <div class="border-b border-[#e5e7eb] py-3">
+                            <div
+                                class="group flex items-center px-3 py-3 justify-between
+                                    bg-[#2017CE] hover:bg-[#ABF970]
+                                    rounded-lg my-2 transition-colors duration-300"
+                            >
+                                <a href="" class="text-white group-hover:text-black transition-colors duration-300">
+                                New Zealand
+                                </a>
+                                <img
+                                src="images/button-arrow-right.svg"
+                                alt=""
+                                class="w-10 h-10 invert-0 group-hover:invert transition-all duration-300"
+                                />
+                            </div>
+                            </div>
+
+                            
+                            <div class="mb-10 py-3">
+                            <div
+                                class="group flex items-center px-3 py-3 justify-between
+                                    bg-[#2017CE] hover:bg-[#ABF970]
+                                    rounded-lg my-2 transition-colors duration-300"
+                             >
+                                <a href="" class="text-white group-hover:text-black transition-colors duration-300">
+                                United States
+                                </a>
+                                <img
+                                src="images/button-arrow-right.svg"
+                                alt=""
+                                class="w-10 h-10 invert-0 group-hover:invert transition-all duration-300"
+                                />
+                            </div>
+                            </div>
+
+               
+                        </div>
+
+                            </div>
+                            <div class="w-[100%] h-[100%]  rounded-2xl py-5 ">
+                                <img src="	https://gostudyin.com/wp-content/uploads/2025/03/study-in-canada-home.jpg" alt="" class="rounded-lg">
+
+                            </div>
+                        </div>
+           
+                        
+                    </div>
+      
+                </div>
+            </div>
+    </section>
+
+    <section>
+            <div class="bg-white">
+                <div class="w-[1400px] mx-auto py-[100px]">
+                    
+                    <div class=" flex gap-5 ">
+                        <div class=" w-[100%] h-[1000px]  border border-gray-200 rounded-2xl bg-[#F7003B] ">
+                            <div class=" overflow-visible h-screen  " style="background-image: url('https://gostudyin.com/wp-content/uploads/2025/12/testim-red.webp'); background-position:  right 0px top; background-size: 500px auto; background-repeat: no-repeat;">
+                                <div class="h-[1000px] flex flex-col justify-end px-20 pb-20">
+                                    <h2 class="font-['geller-headline'] serif text-white text-[64px] font-semibold leading-tight">Speak with one of our expert counsellors</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[100%] h-[1000px]  border border-gray-200 rounded-2xl bg-[#CCF8FF] ">
+                            <div
+                                class="h-screen bg-no-repeat bg-left "
+                                style="
+                                background-image: url('https://gostudyin.com/wp-content/uploads/2025/10/Ann.png');
+                                background-size: 200px auto;
+                                background-position: 80px 100px;
+                                "
+                                >
+                                <div class="h-[1000px] flex flex-col justify-end px-20 pb-20">
+                                    <div class="  mb-10">
+                                        <h2 class="font-['geller-headline'] serif  text-[45px] font-semibold leading-tight">         
+                                        “Nothing makes me happier than seeing students get into their dream universities. I’m honored to be part of their study abroad journey. ” <br>
+                                        </h2>
+                                    </div >
+                                    <div class="flex items-center mb-10">
+                                        <h2><span class="font-['geller-headline'] serif  text-[30px] font-semibold">Ann</span> <span class="font-['geller-headline'] serif  text-[20px]  text-[#565F75]"> - COUNSELLOR-THAILAND</span> </h2>
+                                    </div>
+                                    <div class="">
+                                        <button
+                                        class="bg-red-500 hover:bg-[#FA557C] text-white rounded-xl font-semibold text-xl flex items-center gap-3 px-6 py-3"
+                                        >
+                                        Book free counselling
+                                        <img src="images/button-arrow-right.svg" alt="" class="w-4 h-4" />
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                    
+                    
+                </div>
+            </div>
+    </section>
+
+    <section>
+            <div class="bg-[#010A1C]">
+                <div class="w-[1400px] mx-auto py-20">
+                    <div class="flex justify-center mb-20">
+                        <h2 class="font-['geller-headline'] serif  text-[60px] font-semibold text-white">Hear from <span class="text-[#ABF970]">our student</span></h2>
+                    </div>
+                    <div class="relative flex  justify-center gap-2 mb-10 ">
+                        <div class="w-[311px] group cursor-pointer" role="group" aria-label="1 / 16">
+                            <div class="mb-15 relative w-full overflow-visible rounded-lg border-4 border-transparent transition-all duration-300 ease-in-out group-hover:border-[#ABF970] group-hover:scale-105" style="padding-top:177.5%;">
+                                <iframe frameborder="0" scrolling="no" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" class="rounded-lg absolute top-0 left-0 w-full h-full overflow-visible object-cover" title="Riddhi - SI-UK Student" src="https://player.vimeo.com/video/1098477835?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" data-ready="true">
+                                </iframe>
+                            </div>
+                            <div class="mb-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <h3 class=" flex justify-center bg-[#ABF970] font-['geller-headline'] serif text-[35px] font-semibold py-1 px-5 mx-22 rounded-lg">Riddhi</h3>
+                            </div>
+                            <div class=" opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <p class="text-white text-[20px] flex justify-center">Guidance on courses and events</p>
+                            </div>
+                        </div>
+                        <div class="w-[311px] group cursor-pointer" role="group" aria-label="1 / 16">
+                            <div class="mb-15 relative w-full overflow-visible rounded-lg border-4 border-transparent transition-all duration-300 ease-in-out group-hover:border-[#ABF970] group-hover:scale-105" style="padding-top:177.5%;">
+                                <iframe frameborder="0" scrolling="no" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" class="rounded-lg absolute top-0 left-0 w-full h-full overflow-visible object-cover" title="Riddhi - SI-UK Student" src="https://player.vimeo.com/video/1098477835?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" data-ready="true">
+                                </iframe>
+                            </div>
+                            <div class="mb-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <h3 class=" flex justify-center bg-[#ABF970] font-['geller-headline'] serif text-[35px] font-semibold py-1 px-5 mx-22 rounded-lg">Riddhi</h3>
+                            </div>
+                            <div class=" opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <p class="text-white text-[20px] flex justify-center">Guidance on courses and events</p>
+                            </div>
+                        </div>
+                        <div class="w-[311px] group cursor-pointer" role="group" aria-label="1 / 16">
+                            <div class="mb-15 relative w-full overflow-visible rounded-lg border-4 border-transparent transition-all duration-300 ease-in-out group-hover:border-[#ABF970] group-hover:scale-105" style="padding-top:177.5%;">
+                                <iframe frameborder="0" scrolling="no" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" class="rounded-lg absolute top-0 left-0 w-full h-full overflow-visible object-cover" title="Riddhi - SI-UK Student" src="https://player.vimeo.com/video/1098477835?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" data-ready="true">
+                                </iframe>
+                            </div>
+                            <div class="mb-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <h3 class=" flex justify-center bg-[#ABF970] font-['geller-headline'] serif text-[35px] font-semibold py-1 px-5 mx-22 rounded-lg">Riddhi</h3>
+                            </div>
+                            <div class=" opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <p class="text-white text-[20px] flex justify-center">Guidance on courses and events</p>
+                            </div>
+                        </div>
+                        <div class="w-[311px] group cursor-pointer" role="group" aria-label="1 / 16">
+                            <div class="mb-15 relative w-full overflow-visible rounded-lg border-4 border-transparent transition-all duration-300 ease-in-out group-hover:border-[#ABF970] group-hover:scale-105" style="padding-top:177.5%;">
+                                <iframe frameborder="0" scrolling="no" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" class="rounded-lg absolute top-0 left-0 w-full h-full overflow-visible object-cover" title="Riddhi - SI-UK Student" src="https://player.vimeo.com/video/1098477835?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" data-ready="true">
+                                </iframe>
+                            </div>
+                            <div class="mb-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <h3 class=" flex justify-center bg-[#ABF970] font-['geller-headline'] serif text-[35px] font-semibold py-1 px-5 mx-22 rounded-lg">Riddhi</h3>
+                            </div>
+                            <div class=" opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <p class="text-white text-[20px] flex justify-center">Guidance on courses and events</p>
+                            </div>
+                        </div>
+                        <div class="w-[311px] group cursor-pointer" role="group" aria-label="1 / 16">
+                            <div class="mb-15 relative w-full overflow-visible rounded-lg border-4 border-transparent transition-all duration-300 ease-in-out group-hover:border-[#ABF970] group-hover:scale-105" style="padding-top:177.5%;">
+                                <iframe frameborder="0" scrolling="no" allow="autoplay"; fullscreen; picture-in-picture; clipboard-write; encrypted-media" class="rounded-lg absolute top-0 left-0 w-full h-full overflow-visible object-cover" title="Riddhi - SI-UK Student" src="https://player.vimeo.com/video/1098477835?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" data-ready="true">
+                                </iframe>
+                            </div>
+                            <div class="mb-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <h3 class=" flex justify-center bg-[#ABF970] font-['geller-headline'] serif text-[35px] font-semibold py-1 px-5 mx-22 rounded-lg">Riddhi</h3>
+                            </div>
+                            <div class=" opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <p class="text-white text-[20px] flex justify-center">Guidance on courses and events</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-5 justify-end ">
+                        <button class="bg-[#ABF970] rounded-lg py-3 px-3">
+                        <img src="images/button-arrow-right.svg" alt="" class="w-5 h-5 rotate-180 filter invert" />
+                        </button>
+                        <button class="bg-[#ABF970] rounded-lg py-3 px-3">
+                        <img src="images/button-arrow-right.svg" alt="" class="w-5 h-5 filter invert" />
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+
+    <section>
+            <div class="bg-[#2017CE]">
+                <div class="relative overflow-visible " style="background-image: url('https://gostudyin.com/wp-content/uploads/2025/03/Testimonials-pattern.svg'); background-position: left 0px bottom 0px; background-size: initial; background-repeat: no-repeat; ">
+                    <div class="w-[1400px] mx-auto py-20">
+                        <div class="flex">
+                            <div class="h-[100%] w-[1000px] ">
+                                <div>
+                                    <h3 class="font-['geller-headline'] serif text-[65px] font-semibold leading-tight">
+                                        <span class="text-[white]">What</span> <br>
+                                        <span class="text-[#ABF970]">our students </span>
+                                        <span class="text-[white]">say</span>
+                                    </h3>
+
+                                </div>
+                            </div>
+
+                            <div class="h-[100%] w-[100%] ">
+                                <div class="mb-10">
+                    
+                                    <img
+                                        src="https://gostudyin.com/wp-content/uploads/2025/03/quatation-mark.svg"
+                                        alt=""
+                                        class=""
+                                        />
+                                </div>
+                                <div class="">
+                                    <p class="text-white text-[19px] mb-30">
+                                        Currently a second-year Birmingham Medical student, I found out about StudyIn through friends and family and was amazed at their high quality of service. Their responses were immediate, and the team was very welcoming. No matter how repetitive and redundant an inquiry seemed, the team made sure that I received a sufficient answer. I’m extremely pleased with my experience with StudyIn.
+                                    </p>
+                                    <div class="mb-5">
+                                        <h3 class="font-['geller-headline'] serif text-[35px] font-semibold text-[#ABF970]">
+                                        Veer S
+                                        </h3>
+                                    </div>
+                                    <div class="mb-40">
+                                        <p class="text-gray-300 font-['geller-headline'] serif text-[20px]">
+                                        University of Birmingham, Medicine
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                    
+                        </div>
+
+                        <div class="flex gap-5 justify-end ">
+                            <button class="bg-[#ABF970] rounded-lg py-3 px-3">
+                                <img src="images/button-arrow-right.svg" alt="" class="w-5 h-5 rotate-180 filter invert" />
+                            </button>
+                            <button class="bg-[#ABF970] rounded-lg py-3 px-3">
+                                <img src="images/button-arrow-right.svg" alt="" class="w-5 h-5 filter invert" />
+                            </button>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+                   
+            </div>
+    </section>
+
+    <section>
+            <div class="bg-white py-20">
+                <div class=" ">
+                    
+                    <div class="flex justify-center mb-15  ">
+                        <h2 class="font-['geller-headline'] serif text-[64px] font-bold"><span class="text-[#2017CE]">250+</span> global university partners</h2>
+                    </div>
+                  
+                        <div class="w-full overflow-hidden bg-white mb-15">
+                            <div class="flex gap-12 animate-scroll whitespace-nowrap">
+                                <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/uni-essex.png" alt="Uni Essex" class="h-10 w-auto object-contain flex-shrink-0" />
+                                <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/uni-c-c-u.png" alt="Uni CCU" class="h-10 w-auto object-contain flex-shrink-0" />
+                                <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/oxford.png" alt="Oxford" class="h-10 w-auto object-contain flex-shrink-0" />
+                                <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/swansea.png" alt="Swansea" class="h-10 w-auto object-contain flex-shrink-0" />
+                                <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/University-of-Westminster.png" alt="University of Westminster" class="h-10 w-auto object-contain flex-shrink-0" />
+                                <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/uni-essex.png" alt="Uni Essex" class="h-10 w-auto object-contain flex-shrink-0" />
+                                <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/uni-c-c-u.png" alt="Uni CCU" class="h-10 w-auto object-contain flex-shrink-0" />
+                                <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/oxford.png" alt="Oxford" class="h-10 w-auto object-contain flex-shrink-0" />
+                                <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/swansea.png" alt="Swansea" class="h-10 w-auto object-contain flex-shrink-0" />
+                                <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/University-of-Westminster.png" alt="University of Westminster" class="h-10 w-auto object-contain flex-shrink-0" />
+                                <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/uni-essex.png" alt="Uni Essex" class="h-10 w-auto object-contain flex-shrink-0" />
+                                <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/uni-c-c-u.png" alt="Uni CCU" class="h-10 w-auto object-contain flex-shrink-0" />
+                                <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/oxford.png" alt="Oxford" class="h-10 w-auto object-contain flex-shrink-0" />
+                                <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/swansea.png" alt="Swansea" class="h-10 w-auto object-contain flex-shrink-0" />
+                                <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/University-of-Westminster.png" alt="University of Westminster" class="h-10 w-auto object-contain flex-shrink-0" />
+                            </div>
+                        </div>
+                   
+                   
+                    <div class="w-full overflow-hidden bg-white mb-15 ">
+                        <div class="flex gap-12 animate-scroll-right whitespace-nowrap">
+                            <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/University-of-York.png" alt="University of York" class="h-10 w-auto object-contain flex-shrink-0" />
+                            <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/Group-26703.png" alt="Group 26703" class="h-10 w-auto object-contain flex-shrink-0" />
+                            <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/Pearson.png" alt="Pearson" class="h-10 w-auto object-contain flex-shrink-0" />
+                            <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/svgexport-3.png" alt="Education Logo" class="h-10 w-auto object-contain flex-shrink-0" />
+                            <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/University-of-Bath.png" alt="University of Bath" class="h-10 w-auto object-contain flex-shrink-0" />
+                            <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/University-of-Bristol-logo.png" alt="University of Bristol" class="h-10 w-auto object-contain flex-shrink-0" />
+                            <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/logo-2.png" alt="Partner Logo" class="h-10 w-auto object-contain flex-shrink-0" />
+                            <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/logo-1.png" alt="Partner Logo" class="h-10 w-auto object-contain flex-shrink-0" />
+                            <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/University-of-York.png" alt="University of York" class="h-10 w-auto object-contain flex-shrink-0" />
+                            <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/Group-26703.png" alt="Group 26703" class="h-10 w-auto object-contain flex-shrink-0" />
+                            <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/Pearson.png" alt="Pearson" class="h-10 w-auto object-contain flex-shrink-0" />
+                            <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/svgexport-3.png" alt="Education Logo" class="h-10 w-auto object-contain flex-shrink-0" />
+                            <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/University-of-Bath.png" alt="University of Bath" class="h-10 w-auto object-contain flex-shrink-0" />
+                            <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/University-of-Bristol-logo.png" alt="University of Bristol" class="h-10 w-auto object-contain flex-shrink-0" />
+                            <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/logo-2.png" alt="Partner Logo" class="h-10 w-auto object-contain flex-shrink-0" />
+                            <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/logo-1.png" alt="Partner Logo" class="h-10 w-auto object-contain flex-shrink-0" />
+                            <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/University-of-York.png" alt="University of York" class="h-10 w-auto object-contain flex-shrink-0" />
+                            <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/Group-26703.png" alt="Group 26703" class="h-10 w-auto object-contain flex-shrink-0" />
+                            <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/Pearson.png" alt="Pearson" class="h-10 w-auto object-contain flex-shrink-0" />
+                            <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/svgexport-3.png" alt="Education Logo" class="h-10 w-auto object-contain flex-shrink-0" />
+                            <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/University-of-Bath.png" alt="University of Bath" class="h-10 w-auto object-contain flex-shrink-0" />
+                            <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/University-of-Bristol-logo.png" alt="University of Bristol" class="h-10 w-auto object-contain flex-shrink-0" />
+                            <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/logo-2.png" alt="Partner Logo" class="h-10 w-auto object-contain flex-shrink-0" />
+                            <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/logo-1.png" alt="Partner Logo" class="h-10 w-auto object-contain flex-shrink-0" />
+                        </div>
+                    </div>
+                    <div class="w-full overflow-hidden bg-white ">
+                    <div class="flex gap-12 animate-scroll-left whitespace-nowrap">
+                    <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/site-logo.png" alt="Site Logo" class="h-10 w-auto object-contain flex-shrink-0" />
+                    <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/Clip-path-group.png" alt="Clip Path Group" class="h-10 w-auto object-contain flex-shrink-0" />
+                    <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/lu-logo.png" alt="LU Logo" class="h-10 w-auto object-contain flex-shrink-0" />
+                    <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/University-of-Surrey.png" alt="University of Surrey" class="h-10 w-auto object-contain flex-shrink-0" />
+                    <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/Return-to-the-University-of-Nottingham-homepage.png" alt="University of Nottingham" class="h-10 w-auto object-contain flex-shrink-0" />
+                    <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/The-University-of-Kent-1.png" alt="University of Kent" class="h-10 w-auto object-contain flex-shrink-0" />
+                    <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/University-of-Exeter.png" alt="University of Exeter" class="h-10 w-auto object-contain flex-shrink-0" />
+                    <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/site-logo.png" alt="Site Logo" class="h-10 w-auto object-contain flex-shrink-0" />
+                    <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/Clip-path-group.png" alt="Clip Path Group" class="h-10 w-auto object-contain flex-shrink-0" />
+                    <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/lu-logo.png" alt="LU Logo" class="h-10 w-auto object-contain flex-shrink-0" />
+                    <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/University-of-Surrey.png" alt="University of Surrey" class="h-10 w-auto object-contain flex-shrink-0" />
+                    <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/Return-to-the-University-of-Nottingham-homepage.png" alt="University of Nottingham" class="h-10 w-auto object-contain flex-shrink-0" />
+                    <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/The-University-of-Kent-1.png" alt="University of Kent" class="h-10 w-auto object-contain flex-shrink-0" />
+                    <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/University-of-Exeter.png" alt="University of Exeter" class="h-10 w-auto object-contain flex-shrink-0" />
+                    <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/site-logo.png" alt="Site Logo" class="h-10 w-auto object-contain flex-shrink-0" />
+                    <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/Clip-path-group.png" alt="Clip Path Group" class="h-10 w-auto object-contain flex-shrink-0" />
+                    <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/lu-logo.png" alt="LU Logo" class="h-10 w-auto object-contain flex-shrink-0" />
+                    <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/University-of-Surrey.png" alt="University of Surrey" class="h-10 w-auto object-contain flex-shrink-0" />
+                    <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/Return-to-the-University-of-Nottingham-homepage.png" alt="University of Nottingham" class="h-10 w-auto object-contain flex-shrink-0" />
+                    <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/The-University-of-Kent-1.png" alt="University of Kent" class="h-10 w-auto object-contain flex-shrink-0" />
+                    <img src="https://gostudyin.com/india/wp-content/uploads/sites/3/2025/02/University-of-Exeter.png" alt="University of Exeter" class="h-10 w-auto object-contain flex-shrink-0" />
+                    </div>
+                    </div>
+      
+                </div>
+            </div>
+    </section>
+
+    <section>
+            <div class="bg-[#F8F9FA] ">
+                <div
+                    class="bg-no-repeat bg-right-top"
+                    style="
+                    background-image: url('https://gostudyin.com/wp-content/uploads/2025/12/study-guides-bg.webp');
+                    background-size: auto 685px;
+                    "
+                    >
+
+
+                    <div class="w-[1400px] mx-auto py-25">
+
+                        <div class=" mb-20">
+                            <h2 class="font-['geller-headline'] serif text-[64px] font-bold  leading-tight tracking-tight">
+                                Browse our <span class="text-[#CE0031]">study guides</span><br />
+                                for blogs, articles, and <br>
+                                tips on studying abroad
+                            </h2>
+                        </div>
+
+                        <div class="h-[100%] w-[100%] bg-[#020F30] rounded-lg mb-5">
+                            <div class="relative overflow-visible h-full " style="background-image: url('https://gostudyin.com/wp-content/uploads/sites/3/2025/03/f_study_guide_card_fullwidth.svg'); background-position: right 0px top 0px; background-size: contain; background-repeat: no-repeat;">
+                                <div class="p-10">
+                                    <div class="mb-5">
+                                        <span class="text-[#C9E2E6] text-[18px] ">05 Jan 2026</span>
+                                    </div>
+                                    <div class="mb-5">
+                                        <h3 class="font-['geller-headline'] serif text-[30px] text-white font-semibold">
+                                            Living and Studying in Sydney
+                                        </h3>
+                                    </div>
+                                    <div class="w-[630px] mb-10">
+                                        <p class=" text-[16px] text-[#C9E2E6] font-semibold ">
+                                            Sydney is one of Australia’s most exciting study destinations, offering world‑class education, vibrant student suburbs, part‑time work opportunities and endless things to explore.
+                                        </p>
+                                    </div>
+                                    <div class="">
+                                        <button
+                                            class="bg-[#ABF970]  text-black rounded-xl font-semibold text-xl flex items-center gap-3 px-6 py-3">
+                                            Read more
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="flex flex-row gap-3">
+                            <div class="relative h-[100%] w-[100%] bg-[#020F30] rounded-lg">
+                                <div >
+                                    <div class="absolute right-0 bottom-0
+                                        w-[161px] h-[103px]
+                                        bg-[url('https://gostudyin.com/wp-content/uploads/sites/3/2025/03/f_study_guide_card_small_bg.svg')]
+                                        bg-no-repeat bg-right-bottom bg-cover">
+                                    </div>
+                                    <div class=" p-10">
+                                        <div class="mb-5">
+                                        <span class="text-[#C9E2E6] text-[18px]">05 Jan 2026</span>
+                                        </div>
+                                        <div class="mb-5">
+                                        <h3 class="font-['geller-headline'] serif text-[30px] text-white font-semibold">
+                                            Top 10 UK Universities for Teaching Quality
+                                        </h3>
+                                        </div>
+                                        <div class="mb-15">
+                                        <p class="text-[15px] text-[#C9E2E6] font-semibold">
+                                            Choosing the right university is one of the most important decisions a student will make, and teaching quality plays a major role in shaping skills, confidence, and graduate prospects.
+                                        </p>
+                                        </div>
+                                        <div class="">
+                                        <button class="bg-[#ABF970] text-black rounded-xl font-semibold text-xl flex items-center gap-3 px-6 py-3">
+                                        Read more
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="relative h-[100%] w-[100%] bg-[#020F30] rounded-lg">
+                                <div >
+                                    <div class="absolute right-0 bottom-0
+                                        w-[161px] h-[103px]
+                                        bg-[url('https://gostudyin.com/wp-content/uploads/sites/3/2025/03/f_study_guide_card_small_bg.svg')]
+                                        bg-no-repeat bg-right-bottom bg-cover">
+                                    </div>
+                                    <div class=" p-10">
+                                        <div class="mb-5">
+                                        <span class="text-[#C9E2E6] text-[18px]">05 Jan 2026</span>
+                                        </div>
+                                        <div class="mb-5">
+                                        <h3 class="font-['geller-headline'] serif text-[30px] text-white font-semibold">
+                                            Top 10 UK Universities for Teaching Quality
+                                        </h3>
+                                        </div>
+                                        <div class="mb-15">
+                                        <p class="text-[15px] text-[#C9E2E6] font-semibold">
+                                            Choosing the right university is one of the most important decisions a student will make, and teaching quality plays a major role in shaping skills, confidence, and graduate prospects.
+                                        </p>
+                                        </div>
+                                        <div class="">
+                                        <button class="bg-[#ABF970] text-black rounded-xl font-semibold text-xl flex items-center gap-3 px-6 py-3">
+                                        Read more
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="relative h-[100%] w-[100%] bg-[#020F30] rounded-lg">
+                                <div >
+                                    <div class="absolute right-0 bottom-0
+                                        w-[161px] h-[103px]
+                                        bg-[url('https://gostudyin.com/wp-content/uploads/sites/3/2025/03/f_study_guide_card_small_bg.svg')]
+                                        bg-no-repeat bg-right-bottom bg-cover">
+                                    </div>
+                                    <div class=" p-10">
+                                        <div class="mb-5">
+                                        <span class="text-[#C9E2E6] text-[18px]">05 Jan 2026</span>
+                                        </div>
+                                        <div class="mb-5">
+                                        <h3 class="font-['geller-headline'] serif text-[30px] text-white font-semibold">
+                                            Top 10 UK Universities for Teaching Quality
+                                        </h3>
+                                        </div>
+                                        <div class="mb-15">
+                                        <p class="text-[15px] text-[#C9E2E6] font-semibold">
+                                            Choosing the right university is one of the most important decisions a student will make, and teaching quality plays a major role in shaping skills, confidence, and graduate prospects.
+                                        </p>
+                                        </div>
+                                        <div class="">
+                                        <button class="bg-[#ABF970] text-black rounded-xl font-semibold text-xl flex items-center gap-3 px-6 py-3">
+                                        Read more
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            
+
+                            
+                        </div>
+
+                        <div class=" flex justify-center pt-20">
+                                <button
+                                    class="bg-[#2017ce] hover:bg-[#6A64DE] text-white rounded-xl font-semibold text-xl flex items-center gap-3 px-6 py-3"
+                                    >
+                                    View all study guide
+                                    <img src="images/button-arrow-right.svg" alt="" class="w-4 h-4" />
+                                </button>
+                            </div>
+
+
+                    </div>
+
+                </div>
+
+                    
+            </div>
+    </section>
+
+    <section>
+            <div class="bg-[#163033] ">
+                <div
+                    class="bg-no-repeat bg-right-top"
+                    style="
+                    background-image: url('https://gostudyin.com/wp-content/uploads/2025/12/new-bg.webp');
+                    background-size: auto 685px;
+                    "
+                    >
+
+
+                    <div class="w-[1400px] mx-auto py-25">
+
+                        <div class=" mb-20">
+                            <h2 class="font-['geller-headline'] serif text-[64px] font-bold text-white  leading-tight tracking-tight">
+                                Higher education news<br />
+                                and updates
+                            </h2>
+                        </div>
+
+                        <div class="h-[100%] w-[100%] bg-[#223A3D] rounded-lg mb-5">
+                            <div class="relative overflow-visible h-full " style="background-image: url('https://gostudyin.com/wp-content/uploads/sites/3/2025/03/f_study_guide_card_fullwidth.svg'); background-position: right 0px top 0px; background-size: contain; background-repeat: no-repeat;">
+                                <div class="p-10">
+                                    <div class="mb-5">
+                                        <span class="text-[#C9E2E6] text-[18px] ">29 Dec 2025</span>
+                                    </div>
+                                    <div class="w-[650px] mb-5">
+                                        <h3 class="font-['geller-headline'] serif text-[40px] text-white font-semibold">
+                                            Record Number of Students Choosing UK AI Degrees
+                                        </h3>
+                                    </div>
+                                    <div class="w-[630px] mb-10">
+                                        <p class=" text-[14px] text-[#C9E2E6] font-semibold ">
+                                            UK universities are seeing record numbers of students enrolling on artificial intelligence degrees, with a 42% rise this year alone.
+                                        </p>
+                                    </div>
+                                    <div class="">
+                                        <button
+                                            class="bg-[#ABF970]  text-black rounded-xl font-semibold text-xl flex items-center gap-3 px-6 py-3">
+                                            Read more
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="flex flex-row gap-3">
+                            <div class="relative h-[100%] w-[100%] bg-[#223A3D] rounded-lg">
+                                <div >
+                                    <div class="absolute right-0 bottom-0
+                                        w-[161px] h-[103px]
+                                        bg-[url('https://gostudyin.com/wp-content/uploads/sites/3/2025/03/f_study_guide_card_small_bg.svg')]
+                                        bg-no-repeat bg-right-bottom bg-cover">
+                                    </div>
+                                    <div class=" p-10">
+                                        <div class="mb-5">
+                                        <span class="text-[#C9E2E6] text-[18px]">05 Jan 2026</span>
+                                        </div>
+                                        <div class="mb-5">
+                                        <h3 class="font-['geller-headline'] serif text-[40px] text-white font-semibold">
+                                            UCL Strengthens its Position as Global Leader in...
+                                        </h3>
+                                        </div>
+                                        <div class="mb-45">
+                                        <p class="text-[15px] text-[#C9E2E6] ">
+                                            UCL has consolidated its standing as a leading institution for environmental and social impact, placing first in the UK, second...
+                                        </p>
+                                        </div>
+                                        <div class="">
+                                        <button class="bg-[#ABF970] text-black rounded-xl font-semibold text-xl flex items-center gap-3 px-6 py-3">
+                                        Read more
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="relative h-[100%] w-[100%] bg-[#223A3D] rounded-lg">
+                                <div >
+                                    <div class="absolute right-0 bottom-0
+                                        w-[161px] h-[103px]
+                                        bg-[url('https://gostudyin.com/wp-content/uploads/sites/3/2025/03/f_study_guide_card_small_bg.svg')]
+                                        bg-no-repeat bg-right-bottom bg-cover">
+                                    </div>
+                                    <div class=" p-10">
+                                        <div class="mb-5">
+                                        <span class="text-[#C9E2E6] text-[18px]">05 Jan 2026</span>
+                                        </div>
+                                        <div class="mb-5">
+                                        <h3 class="font-['geller-headline'] serif text-[40px] text-white font-semibold">
+                                            University of Otago Celebrates International Academic Excellence Scholars
+                                        </h3>
+                                        </div>
+                                        <div class="mb-15">
+                                        <p class="text-[15px] text-[#C9E2E6] ">
+                                            The University of Otago has honoured its first International Academic Excellence Scholars, showcasing its commitment to global talent.
+                                        </div>
+                                        <div class="">
+                                        <button class="bg-[#ABF970] text-black rounded-xl font-semibold text-xl flex items-center gap-3 px-6 py-3">
+                                        Read more
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="relative h-[100%] w-[100%] bg-[#223A3D] rounded-lg">
+                                <div >
+                                    <div class="absolute right-0 bottom-0
+                                        w-[161px] h-[103px]
+                                        bg-[url('https://gostudyin.com/wp-content/uploads/sites/3/2025/03/f_study_guide_card_small_bg.svg')]
+                                        bg-no-repeat bg-right-bottom bg-cover">
+                                    </div>
+                                    <div class=" p-10">
+                                        <div class="mb-5">
+                                        <span class="text-[#C9E2E6] text-[18px]">05 Jan 2026</span>
+                                        </div>
+                                        <div class="mb-5">
+                                        <h3 class="font-['geller-headline'] serif text-[40px] text-white font-semibold">
+                                            Durham University Named University of the Year for...
+                                        </h3>
+                                        </div>
+                                        <div class="mb-51">
+                                        <p class="text-[15px] text-[#C9E2E6] ">
+                                            Durham University has been named The Times and The Sunday Times University of the Year 2026.
+                                        </p>
+                                        </div>
+                                        <div class="">
+                                        <button class="bg-[#ABF970] text-black rounded-xl font-semibold text-xl flex items-center gap-3 px-6 py-3">
+                                        Read more
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            
+
+                            
+                        </div>
+
+                        <div class=" flex justify-center pt-20">
+                                <button
+                                    class="bg-[#2017ce] hover:bg-[#6A64DE] text-white rounded-xl font-semibold text-xl flex items-center gap-3 px-6 py-3"
+                                    >
+                                    View all study guide
+                                    <img src="images/button-arrow-right.svg" alt="" class="w-4 h-4" />
+                                </button>
+                            </div>
+
+
+                    </div>
+
+                </div>
+
+                    
+            </div>
+    </section>
+
+    <section>
+            <div class="bg-[#020F30]">
+                <div 
+                    class="relative h-screen bg-no-repeat bg-left bg-cover"
+                    style="background-image: url('https://gostudyin.com/wp-content/uploads/2025/03/cta-pattern.svg');">
+
+                    <div class="w-[1400px] mx-auto pt-80">
+                        <div class="ml-140">
+                            <div class=" flex items-center justify-center text-center mb-10">
+                                <h2 class="font-['geller-headline'] serif text-[64px] font-bold text-white  leading-tight tracking-tight">
+                                    Take the <span class="text-[#ABF970]">first</span><br />
+                                    <span class="text-[#ABF970]">step</span> towards studying <br>
+                                    abroad!
+                                </h2>
+                            </div>
+                            <div class="flex   justify-center">
+                                <button
+                                    class="bg-red-500 hover:bg-[#FA557C] text-white rounded-xl font-semibold text-xl flex items-center gap-3 px-6 py-3"
+                                    >
+                                Book free counselling
+                                <img src="images/button-arrow-right.svg" alt="" class="w-4 h-4" />
+                                </button>
+                            </div>
+                         </div>
+                                    
+                    </div>
+
+                </div>
+
+                
+
+
+
+                
+            </div>
+    </section>
+
+    <footer>
+            <div class="bg-[#A7F76A]">
+                <div class="w-[1400px] mx-auto pt-20">
+
+                    <div class="flex flex-row gap-2 mb-30 ">
+                        <div class="w-[100%] h[100%] ">
+                            <div class="flex items-center gap-2 mb-5">
+                                <img src="https://gostudyin.com/wp-content/uploads/2025/03/studyin-logo.svg" alt="">
+                            </div>
+                            <p class="text-[18px] leading-relaxed max-w-md mb-10">
+                                Navigating the path to global higher education can be complex,
+                                but you don’t have to do it alone. Whatever your ambition,
+                                we’re here to guide you every step of the way. Achieve your
+                                goals with the world’s most trusted higher education specialist.
+                            </p>
+                            <div class="flex gap-4 ">
+                                <div class="w-15 h-15 border border-[#020F30] rounded-xl flex items-center justify-center">
+                                    <img src="https://gostudyin.com/wp-content/uploads/2025/03/linkedin-1.svg" alt="">
+                                </div>
+                                <div class="w-15 h-15 border border-[#020F30] rounded-xl flex items-center justify-center">
+                                    <img src="https://gostudyin.com/wp-content/uploads/2025/03/facebook-1.svg" alt="">
+                                </div>
+                                <div class="w-15 h-15 border border-[#020F30] rounded-xl flex items-center justify-center">
+                                    <img src="https://gostudyin.com/wp-content/uploads/2025/03/youtube-1.svg" alt="">
+                                </div>
+                                <div class="w-15 h-15 border border-[#020F30] rounded-xl flex items-center justify-center">
+                                    <img src="https://gostudyin.com/wp-content/uploads/2025/03/instagram-1.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[100%] h[100%] ">
+
+                            <div class="flex ">
+                                <div>
+                                    <div class=" mr-35  ">
+                                        <p class="flex   font-bold mb-5 ">Desentation</p>
+                                        <div class="flex ">
+                                            <ul class="space-y-4">
+                                                <li ><a href="">United Kingdom</a></li>
+                                                <li ><a href="">Australia</a></li>
+                                                <li ><a href="">Canada</a></li>
+                                                <li ><a href="">Dubai</a></li>
+                                                <li ><a href="">Ireland</a></li>
+                                                <li ><a href="">New Zealand</a></li>
+                                                <li ><a href="">United States</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                        
+                                <div>
+                                    <div class="mr-35  ">
+                                        <p class="flex   font-bold mb-5">Quick Links</p>
+                                        <div class="flex ">
+                                            <ul class="space-y-4">
+                                                <li><a href="">Course finder</a></li>
+                                                <li><a href="">Services</a></li>
+                                                <li><a href="">Language prep</a></li>
+                                                <li><a href="">Scholarships</a></li>
+                                                <li><a href="">Events</a></li>
+                                                <li><a href="">Company Blog</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div>
+                                    <div class=" ">
+                                        <p class=" font-bold mb-5">Company</p>
+                                        <ul class="space-y-4 ">
+                                            <li><a href="">About</a></li>
+                                            <li><a href="">Our team</a></li>
+                                            <li><a href="">Global offices</a></li>
+                                            <li><a href="">Anti bribery policy</a></li>
+                                            <li><a href="">Code of conduct</a></li>
+                                            <li><a href="">Whistle blower policy</a></li>
+                                            <li><a href="">
+                                                Modern Slavery Statement</a>
+                                            </li>
+                                            <li><a href="">
+                                                Student complaint policy</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+
+                    <div class="">
+                        
+                        <h4 class="text-[18px] font-bold">Agent Quality Framework (AQF) Compliance</h4>
+                        </div>
+                        <div class="">
+                            <p class="text-[18px]">
+                                StudyIn is committed to upholding the highest standards in international student recruitment. We adhere to the principles of the Agent Quality Framework (AQF), ensuring ethical practices, transparency, and professionalism in all our services. Our agents are trained and certified to provide accurate and reliable guidance to students.
+                            </p>
+                        </div>
+                    
+
+                    </div>
+
+                   <div class="relative overflow-hidden h-[345px]">
+                        <div class="absolute bottom-0 left-1/2 -translate-x-1/2
+                        w-[3450px] h-screen
+                        bg-[url('https://gostudyin.com/wp-content/uploads/2025/03/footer-pattern.svg')]
+                        bg-bottom bg-contain bg-no-repeat pb-[100px] pt-[100px]">
+                        </div>
+                    </div>
+
+                    <div class="  px-30 py-5 flex flex-col md:flex-row justify-between bg-[#163033] items-center text-lg  gap-4 text-white ">
+                        <span>© Copyright 2026 StudyIn. All Rights Reserved</span>
+                        <div class="flex items-center gap-5  ">
+                        <a href="#">Terms of services</a>
+                        <img src="https://gostudyin.com/wp-content/uploads/2025/03/footer-dot.svg" class="w-[6px]" />
+                        <a href="#">Privacy policy</a>
+                        <img src="https://gostudyin.com/wp-content/uploads/2025/03/footer-dot.svg" class="w-[6px]" />
+                        <a href="#">Cookie policy</a>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+</body>
+</html>
